@@ -1,0 +1,111 @@
+<!--  -->
+
+<!DOCTYPE html> <!-- Indica que el documento usa HTML5 -->
+
+<html lang="en"><!-- Elemento raíz de la página. lang="en" indica que el idioma principal es inglés -->
+
+<head> <!-- Contiene información de configuración de la página que no se muestra directamente -->
+
+    <meta charset="UTF-8"> <!-- Define la codificación de caracteres UTF-8 para permitir tildes, símbolos y caracteres especiales -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- Hace que la página sea responsive en dispositivos móviles -->
+
+    <title>Mi primera página WEB</title><!-- Título que aparece en la pestaña del navegador -->
+
+</head>
+
+<body>
+    <!-- Contiene todo el contenido visible de la página:
+         textos, imágenes, botones, etc. -->
+    <h1>Título</h1>
+    <h2> Subtítulo </h2>
+    <h3> Subtítulo </h3>
+    <h4> Subtítulo </h4>
+    <h5> Subtítulo </h5>
+
+    <h2> etiquetas </h2>
+    <p> Lo que se está escribiendo<br>aquí es un párrafo</p>
+    
+
+
+        
+
+    <img src="https://picsum.photos/300/200" alt="Imagen aleatoria"withd=200>
+    <br><img src="https://cataas.com/cat" alt="Imagen aleatoria"withd=200>
+    <a target ="_blank" href="https://www.google.com/?gws_rd=ssl" > <br> Este es un enlace> <a>
+    <div> Esto es un div </div> <!-- un <div> permite aplicar MUCHAS funcionalidades porque funciona como un contenedor general.
+    Pero técnicamente el <div> no “tiene funciones” propias. -->
+    <span>Esto es un span</span> <!-- un <span> es un contenedor pequeño que se usa para:
+    modificar o identificar una parte específica de un texto. colorear palabras,aplicar estilos,modificar partes del texto,usar JavaScript sobre fragmentos específico -->
+    <h2> Atributos </h2>
+    <p class="descripcion cosas"> Aquí estoy describiendo una imagen random</p>
+    <p class="descripcion gato">Aqui estoy describiendo un gato gris y divertido</p>
+    <p class="descripcion cosas">Aqui estoy describiendo una imagen random</p>
+    <p class="descripcion gato">Aqui estoy describiendo un gato naranjoso y panzon</p>
+    <p id="Parrafo1"></p>
+    
+    <h2> Listas   </h2>
+    <ol type="A"> <!-- siver para Ordenar una lista, puedo editar la segmentación con type= "a" para letras-->
+        <li>Elemento1</li> <!-- puede ser una lista de cualquier cosa  -->
+        <li>Elemento2</li> 
+        <li>Elemento3</li> 
+        <li>Elemento4</li>    
+    </ol>
+
+    <ul type="square"> <!-- siver para Desordenar una lista, puedo editar la segmentación de puntos a cuacrados con square-->
+        <li>Elemento1</li> 
+        <li>Elemento2</li> 
+        <li>Elemento3</li> 
+        <li>Elemento4</li> 
+    </ul>
+
+    <form action="/" method="post">
+    <label for="name">Nombre: </label>
+    <input type="text" id="name" name="name">
+    <br>
+    <br>
+    <label for="email">Correo: </label>
+    <input type="email" id="email" name="email">
+    <br>
+    <!--<input type="submit" value="Enviar"> versión antigua de boton  -->
+    <br>
+    <button type="submit" value >Enviar</button>
+
+    <!-- <form>: crea un formulario para enviar datos del usuario -->
+<!-- action="/": indica la ruta donde se enviará la información -->
+<!-- method="post": envía los datos de forma oculta y segura -->
+<!-- <label>: muestra un texto descriptivo para un campo -->
+<!-- for="name": conecta el label con el input mediante el id -->
+<!-- <input type="text">: campo para escribir texto -->
+<!-- id: identificador único del elemento -->
+<!-- name: nombre del dato que se enviará al servidor -->
+<!-- <br>: salto de línea -->
+<!-- <input type="email">: campo para correos electrónicos -->
+<!-- <input type="button">: crea un botón -->
+<!-- value="Enviar": texto visible del botón -->
+
+    <button type="submit" value= >Cancelar </button>
+    <br>
+    <br>
+    </form>
+    <table border ="0"> <!-- Esta etiquera es para crear tablas -->
+    <tr> <!-- tr se utiliza para definir una fila -->
+    <th>Nombre</th>
+    <th>Edad</th>
+    <th>Ciudad</th>
+    </tr>
+    <tr> <!-- tr se utiliza para definir una fila -->
+    <td>Alicia</td>
+    <td>29</td>
+    <td>Santiago</td>
+    </tr>
+    <tr> <!-- tr se utiliza para definir una fila -->
+    <td>Felipe</td>
+    <td>50</td>
+    <td>Santiago</td>
+    </tr>
+    <tr> <!-- tr se utiliza para definir una fila-->
+    </tr>
+
+</body>
+</html>
