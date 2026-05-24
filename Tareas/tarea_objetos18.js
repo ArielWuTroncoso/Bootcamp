@@ -581,6 +581,10 @@ let calculadora={
                     resultado=this.ejecucion(this.multiplicar),
                     console.log(resultado)
                     break
+                case 4:
+                    resultado=this.ejecucion(this.division),
+                    console.log(resultado)
+
                 
 
             }
@@ -605,6 +609,11 @@ let calculadora={
         let num2= Number(this.introducirnumero())
         let resultado;
         resultado =operacion(num1,num2)
+        /* !!!! Aquí haré de un parámetro una función (suma,resta...)
+            Para cuando le asigne mi función matemática al parámetro "operación" de la f
+            "ejecutar" ya tener sus parámetros (num1,num2) con valores. 
+            Es como dejar el molde listo para usar la f suma,resta,multi... Pero en un parámetro
+        ) */
         return resultado
     },
 
@@ -622,8 +631,12 @@ let calculadora={
     },
 
     division:function(num1,num2){
-        return num1/num2
-    }
+        
+        if (num2 === 0){
+            console.log("¡Error! No se puede dividir por cero")
+
+        }else return num1/num2
+    },
     
 }
 
