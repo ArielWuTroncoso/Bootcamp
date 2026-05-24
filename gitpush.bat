@@ -6,11 +6,11 @@ echo ==========================
 echo ACTUALIZANDO REPOSITORIO
 echo ==========================
 
-cd /d "~\Desktop\Bootcamp"
+cd /d "C:\Users\Ariel\Desktop\Bootcamp"
 
 git add .
 
-set /p mensaje="Actualizando repo "
+set /p mensaje="Ingrese commit:  "
 
 git commit -m "%mensaje%"
 
