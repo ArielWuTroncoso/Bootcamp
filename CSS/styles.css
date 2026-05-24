@@ -1,0 +1,41 @@
+/*selectores de tipo*/
+body{ /*le damos color a todo el body de la pagina*/
+    background-color: green ;
+}
+ 
+p{
+    color: red;
+}
+ 
+h2 {
+    background-color: rgb(209, 20, 20) !important/*!important le da prierita a este estilo en h2*/
+}
+ 
+/*selectores de clase*/
+.destacador{
+    background-color: yellow;
+ 
+}
+.box{
+    border: 2px solid black;
+    background-color: beige;
+    height: 100px;
+    width: 100px;
+    padding: 10px 50px 10px 100px;/*arriba, drecha, abajo, izquierda*/
+    margin:  10px 10px 50px 10px;
+ 
+}
+/*selectores de id*/
+#especial{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+ 
+#titulo{
+    font-size: 50;
+}
+ 
+/*selectores de descendiente*/
+ul ol li {/*damos todos los elemento de la decendensia*/
+    color: red;
+}
+ 
