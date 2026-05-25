@@ -1,0 +1,76 @@
+
+body{
+
+    color: white;
+    background-color: rgb(121, 113, 113);
+}
+ 
+
+
+h1{
+    color: rgb(53, 48, 48);
+    background-color: rgb(13, 192, 162);
+}
+
+h2{
+    color: rgb(53, 48, 48);
+    background-color: rgb(13, 192, 162);
+}
+
+
+h3{
+    color: rgb(53, 48, 48);
+    background-color: rgb(13, 192, 162);
+}
+
+h5{
+    color: rgb(53, 48, 48);
+    background-color: rgb(13, 192, 162);
+}
+
+
+p{
+color:white;
+}
+
+.p2{
+    color:rgb(53, 48, 48);
+}
+
+/* Selectores de clase */
+
+.destacador{
+    background-color: rgb(13, 192, 162);
+    color:rgb(53, 48, 48);
+    
+}
+
+
+
+.border_general{
+/* Clase principal del contenedor del CV */
+
+
+    width: 800px; /* Define el ancho del recuadro */
+
+    margin: 50px auto; /* Centra el DIV horizontalmente */
+
+    padding: 40px; /* Añade espacio interno entre borde y contenido */
+
+    border: 2px solid rgb(22, 21, 21); /* Crea un borde negro sólido */
+
+    background-color: rgb(231, 225, 225); /* Define fondo blanco para el CV */
+}
+
+.progress{
+    background-color: rgb(192, 191, 191)}
+.progress-bar{
+    background-color:chartreuse;}
+
+
+
+.custom-card {
+    background-color: #f1e3e3; /* Color card */ 
+    color: #333333;            /* color texto */
+}
+
