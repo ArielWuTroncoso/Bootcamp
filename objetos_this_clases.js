@@ -39,22 +39,28 @@ console.log(auto.aceleracion())
 // mismos atributos
 
 class auto2{
-    constructora(marca,color,kilometraje) {
+
+    constructor(marca2,color2,kilometraje2) { 
+        
+        //"constructor" es un método generico para construir propiedades de la clase
 
         this.marca2= marca2,
         this.color2= color2,
         this.kilometraje2=kilometraje2
     }
 
-    identificar(){
+    identificar(){ // método para mostrar las propiedades en personajes o cosas después
         return `Este auto ${this.marca2} color ${this.color2} tiene ${this.kilometraje2} kilómetros recorridos`
     }
 }
 
+/* Ahora "instaciamos" creando nuevos "new" objetos que asiganarán valores nuevos a las propiedades
+  del método constructor dentro de la clase "auto2" */
 const audi= new auto2("Audi","Negro",1000);
 const mercedez= new auto2("Mercedez Benz","Verde",10000);
 const volvo= new auto2("Volvo","amarillo",5000);
 
+// ahora solo queda mostrar esos objetos, invocandolos con el método "indentificar"
 console.log(audi.identificar())
 console.log(mercedez.identificar())
 console.log(volvo.identificar())
