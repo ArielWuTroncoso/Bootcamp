@@ -118,6 +118,10 @@ class cuentabancaria{
     }
 
     menu(){
+
+       
+        console.log(this.seleccionarusuario)
+
         console.log("Bienvenido a JAVA Bank")
         console.log("1) Depositar")
         console.log("2) Retirar")
@@ -132,10 +136,19 @@ class cuentabancaria{
             switch(opcion){
 
                 case 1:
+                    
 
             }
         }
 
+    }
+
+    seleccionarusuario(usuario){
+        console.log("Bienvenido a JAVA Bank")
+        let cuenta=prompt("Ingrese su nombre :")
+        return cuenta = usuario, 
+            console.log(` Bienvenido ${usuario}` )
+        
     }
 
 
@@ -143,6 +156,8 @@ class cuentabancaria{
 
         let montodeposito= Number(prompt("Ingrese monto a depositar : ")) 
         let deposito = this.saldo + montodeposito
+        console.log(this.cuenta.retirar())
+
         
         return (`Su saldo es: ${deposito} `)
     }
@@ -239,6 +254,8 @@ tienda1.agregarproducto();
 tienda1.agregarproducto();
 
 tienda1.verinventario();
+
+
 
 
 //  node tarea_clases4.js

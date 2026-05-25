@@ -38,4 +38,61 @@ h2 {
 ul ol li {/*damos todos los elemento de la decendensia*/
     color: red;
 }
- 
+
+
+/* Clase lunes 25/05 píxeles */
+#px{
+
+    width: 50%;
+
+    font-size: Zrem;
+
+    }
+
+#unidades{
+
+    font-size: 2em;
+
+}
+
+
+
+ /*  <!-- Distribución de elementos --> */
+
+.ejemplo-flex {
+border: 2px solid black;
+height: 250px;
+display: flex;
+flex-direction: column; /* row por default */
+justify-content: center;
+align-items: center;
+}
+
+.ejemplo-flex p{
+border: 1px solid black;
+background-color: aqua;
+}
+
+.ejemplo-grid{
+border: 2px
+solid blue;
+}
+
+.ejemplo-grid{
+border: 2px solid
+blue;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr
+}
+
+
+@keyframes color {
+    0% {background-color: blueviolet;}
+    25% {background-color: black;}
+    75% {background-color: aqua;}
+    100% {background-color: blue;}}
+
+.parrafo1:hover{
+background-color: brown;
+animation: color is infinite;
+}
