@@ -117,10 +117,17 @@ class cuentabancaria{
         this.saldo=saldo
     }
 
-    menu(){
 
-       
-        console.log(this.seleccionarusuario)
+    seleccionarUsuario(usuario){
+
+        console.log("Bienvenido a JAVA Bank")
+        let cuenta=prompt("Ingrese su nombre :")
+        return console.log(` Bienvenido ${usuario}` )
+    }
+    
+//  node tarea_clases4.js
+
+    menu(){
 
         console.log("Bienvenido a JAVA Bank")
         console.log("1) Depositar")
@@ -128,38 +135,39 @@ class cuentabancaria{
         console.log("3) Saldo")
         console.log("4) Salir")
 
+
         let opcion;
 
         while(opcion !== 4){
 
-            opcion = prompt("Ingrese su opción: ")
+            opcion = Number(prompt("Ingrese su opción: "))
             switch(opcion){
 
                 case 1:
+                     this.depositar()
+                      break
+                case 2:
+                    this.retirar()
+                    break
+                case 3:
+                    this.versaldo()
+                    break
+                case 4:
+                    return console.log("¡Hasta pronto!")
                     
-
             }
         }
 
     }
 
-    seleccionarusuario(usuario){
-        console.log("Bienvenido a JAVA Bank")
-        let cuenta=prompt("Ingrese su nombre :")
-        return cuenta = usuario, 
-            console.log(` Bienvenido ${usuario}` )
-        
-    }
-
+ //  node tarea_clases4.js   
 
     depositar(){
 
         let montodeposito= Number(prompt("Ingrese monto a depositar : ")) 
         let deposito = this.saldo + montodeposito
-        console.log(this.cuenta.retirar())
-
         
-        return (`Su saldo es: ${deposito} `)
+        return console.log(`Su saldo es: ${deposito} `)
     }
 
     retirar(){
@@ -168,22 +176,38 @@ class cuentabancaria{
         if(montoretiro > this.saldo){
             console.log("Saldo insuficiente")
         } else 
-            retiro = this.saldo - montoretiro
-            return (`Su saldo es: ${retiro} `)
+            retiro = this.saldo - montoretiro, console.log(`Su saldo es: ${retiro} `)
     }
+            
 
     versaldo(){
-        return (`El saldo actual es: ${this.saldo}`)
+        return console.log(`El saldo actual es: ${this.saldo}`)
     }
 }
+
+//  node tarea_clases4.js   
 
 const Javier = new cuentabancaria("Javier Wood", 10000000)
 const Pedro = new cuentabancaria("Pedro Piedra", 20000000)
 const Julian = new cuentabancaria("Julian Toro", 30000000)
 
 
-console.log(Javier.retirar())
-console.log(Pedro.retirar())
+console.log("#### JAVA BANCK ####")
+let ingresar = prompt("Ingrese usuario: ");
+
+
+if (ingresar === "Javier") {
+    Javier.menu();
+
+} else if (ingresar === "Pedro") {
+    Pedro.menu();
+
+} else if (ingresar === "Julian") {
+    Julian.menu();
+
+} else {
+    console.log("Usuario no encontrado");
+}
 
 //  node tarea_clases4.js
 
@@ -206,8 +230,7 @@ Agrega métodos:
 - mostrarInventario(): que liste todos los productos con su precio.
 */
 //  node tarea_clases4.js
-
-
+/*  
 class Tienda{
 
     constructor(nombre, inventario = []){
@@ -255,7 +278,7 @@ tienda1.agregarproducto();
 
 tienda1.verinventario();
 
-
+*/
 
 
 //  node tarea_clases4.js
