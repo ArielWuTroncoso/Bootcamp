@@ -1,0 +1,39 @@
+body{
+    background-color: rgb(224, 222, 222);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+ 
+form {
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0px 0px 5px black;
+    padding: 20px;
+}
+ 
+input, textarea {
+    width: 100%;
+    margin-bottom: 20px;
+}
+ 
+button {
+    width: 100%;
+    background-color: rgb(68, 169, 252);
+    color: white;
+    padding: 5px;
+    border:none;
+    border-radius: 5px;
+}
+ 
+button:hover{
+    background-color: rgb(8, 88, 236);
+}
+ 
+.posteo {
+    background-color: beige;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 10px 0px;
+}
