@@ -1,0 +1,94 @@
+<!-- Página de worklist, donde puedo escribir mi nombre y un post -->
+
+<!DOCTYPE html>
+<!-- Indica que el documento utiliza HTML5 -->
+
+<html lang="en">
+<!-- Inicio del documento HTML -->
+<!-- lang="en" define el idioma principal de la página -->
+
+<head>
+
+
+    <!-- meta una "etiqueta" HTML que entrega info sobre la página al navegador -->
+    <meta charset="UTF-8">
+    <!-- charset="UTF-8" permite usar caracteres especiales -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- name="viewport" adapta la página a celulares -->
+    <!-- content controla el tamaño y escala inicial -->
+
+    <title>Work's list</title>
+    <!-- Texto mostrado en la pestaña del navegador -->
+
+    <link rel="stylesheet" href="style.css">
+    <!-- link conecta archivos externos -->
+    <!-- rel="stylesheet" indica que es una hoja de estilos -->
+    <!-- href contiene la ruta del archivo CSS -->
+
+
+
+<body>
+<!-- Contenido visible para el usuario -->
+
+    <main class="container">
+    <!-- main representa el contenido principal -->
+    <!-- class="container" permite aplicar estilos CSS -->
+
+        <h1>Mi Lista de Tareas</h1>
+        <!-- h1 es el título principal -->
+        <h2> hola</h2>
+        <form action="" method="post">
+        <!-- form crea un formulario -->
+        <!-- action="" define dónde se envían los datos -->
+        <!-- method="post" envía información de forma segura -->
+        
+        
+            <label for="tarea"></label>
+            <!-- label describe un campo -->
+            <!-- for="tarea" conecta el label con el input -->
+            <!-- ¿Qué hace for="tarea"?
+                    Le dice al navegador: "Este label pertenece al input con id='tarea'" -->
+
+            <input type="text" id="tarea" placeholder="Escribe una nueva Tarea">
+            <!-- input crea un campo de entrada -->
+            <!-- type="text" permite escribir texto -->
+            <!-- id="name" identifica el elemento -->
+            <!-- placeholder muestra un mensaje guía -->
+
+
+            <!--  
+             AQUI ESTA LA PARTE QUE CREA EL INPUT PARA CONTENIDO D POST
+            <textarea 
+                tarea="mensaje" 
+                id="mensaje" 
+                placeholder="Escribe una publicación">
+            </textarea>
+             -->
+            <!-- textarea permite escribir texto largo -->
+            <!-- name="mensaje" identifica el dato enviado -->
+            <!-- id="mensaje" identifica el elemento -->
+            <!-- placeholder muestra texto de ayuda -->
+
+
+
+            <button id="btn-post">Agregar Tarea</button> 
+            <!-- id="btn-post" permite manipularlo con JavaScript -->
+
+        </form>
+         
+        <div id="contenedor-post"> <!-- id="contenedor-post" identifica el contenedor -->
+
+            <!-- Aquí aparecerán los posts agregados dinámicamente con js -->
+            
+
+        </div>
+        
+    </main>
+
+    <script src="script3.js"></script>
+
+    
+</body>
+
+</html>

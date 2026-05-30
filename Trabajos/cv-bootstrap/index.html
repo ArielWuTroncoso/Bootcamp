@@ -4,30 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MI CV</title>
-    <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <!-- Link para incluir emojis en la página -->
-
-<!-- Link bootstrap head -->
+    <link rel="stylesheet" href="estilo.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    
+<!-- Link bootstrap head -->
+    
 </head>
 
 <body>
-    
-    <link rel="stylesheet" href="/cv-bootstrap/estilo.css">
+    <section>
     <div class="border_general shadow-lg bg-dark rounded">
-    <style> 
-
     
-    </style>
     <section>
     <h1> Ariel Yia Li Wu Troncoso</h1>
     <h3> Ingeniero en Automatización y Robótica</h3>
-    <p>Ingeniero en Automatización y Robótica con
-        experiencia en instalación y mantención de equipamiento electrónico, además, desarrollo de herramientas tecnológicas digitales. </p>
-
+    <p>
+        Experiencia en instalación y mantención de equipamiento electrónico, además, desarrollo de herramientas tecnológicas digitales. Actualmente cursando un Bootcamp Full Stack Java en Generation Chile </p>
+        
 
     </section>
+
     <section>
     <h2>Información de contacto</h2>
     <p> +56979916217 </p>
@@ -43,30 +39,30 @@
     <br>
     
     <h3>Datos Personales</h3>
-    <ul type="square"> <!-- ul siver para lista desordenada, puedo editar la segmentación con type= "a" para letras-->
+    <ul class="blanco" type="square"> <!-- ul siver para lista desordenada, puedo editar la segmentación con type= "square" para cuadrados-->
         <li>Edad: 32 años</li> <!-- puede ser una lista de cualquier cosa  -->
         <li>Estado civil: Soltero</li> 
         <li>Nacimiento: 30 Septiembre 1993</li> 
         
     </ul><!-- para una ordenada usar "ol"< -->
-
+   
     
-
+    <section>
     <div class="card">
     <div class="card-body">
      <h2>Educación</h2>
     <br>
     <div>
         <h3>Liceo Industrial Juan Antonio Ríos A-23</h3>
-            <p
-        <p class=p2>2008 - 2012</p>
+            
+        <p class=negro>2008 - 2012</p>
             Titulado de Técnico Eléctrico Nivel Medio
     </div>
     <br>
     <div>
         <h3>Instituto Tecnológico Inacap Cncp - Thno</h3>
-            <p
-        <p class=p2>2020 - 2024</p>
+        
+        <p class=negro>2020 - 2024</p>
             Titulado de Ingeniería en Automatización y Robótica
     </div>
     </div>
@@ -89,7 +85,7 @@
         <br>
         <h3>Empresa Marco Industrial Spa</h3>
         
-        <p class=p2>2011 - 2012</p>
+        <p class=negro>2011 - 2012</p>
         
         <strong class ="destacador">Práctica Programa Dual</strong> <!-- Strong marca el texto importante -->
         <ul>
@@ -99,8 +95,8 @@
     <br>
     <div>
         <h3>Empresa Deep Service Spa</h3>
-            <p
-        <p class=p2>2020 - 2022</p>
+        
+        <p class=negro>2020 - 2022</p>
 
         <ul><article>
             <li>Instalación y configuración de equipos electrónicos de navegación</li>
@@ -113,7 +109,7 @@
         <div>
         <h3>Empresa Infycontrol Spa</h3>
 
-            <p class=p2>2025</p>
+            <p class=negro>2025</p>
         <strong class ="destacador">Práctica de Ingeniería</strong> <!-- "P"Párrafo de texto -->
         <!-- Añadi class="destacador pq se puede añadir donde quiera
             y me sirve para usar una clase def en css" -->
@@ -123,7 +119,7 @@
             <li>Apoyo técnico en diagnóstico de sistemas industriales</li>
         </ul>
         </div>
-        </section>
+    </section>
 
 
         <br>
@@ -159,24 +155,20 @@
   </div>
 
     </section>
-    
-
     <br>
-
     <section>
 
-    <h3>Habilidades blandas
-    </h3>
+    <h3>Habilidades blandas</h3>
 
-    <ul>
+    <ul class="blanco">
         <li>Comunicación Efectiva</li>
         <li>Capacidad de seguir lineamientos</li>
         <li>Mentalidad proactiva ante problemas operativos</li>
         <li>Enfoque resiliente y orientado a mejora continua</li>
     </ul>
-
     </section>
     <br>
+
     <h2>Idiomas</h2>
     
     <ol>
@@ -193,43 +185,18 @@
     <ol>
         Conducir: Tipo B
     </ol>
-
-    </section>
+    </div>
 
     <!-- Link bootstrap body -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 
     </div>
-</body>
-</html>
-
     <footer>
-    <p>CV creado con html- css - bootstrap - 2026</p>
+    <p class="negro">CV creado con html- css - bootstrap - 2026</p>
     </footer>
 
 
-
-<!-- 
     
-<section>
-  <h2>Idiomas</h2>
-  <table border="1">
-    <thead>
-      <tr>
-        <th>Idioma</th>
-        <th>Nivel</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Español</td>
-        <td>Nativo</td>
-      </tr>
-      <tr>
-        <td>Inglés</td>
-        <td>Básico</td>
-      </tr>
-    </tbody>
-  </table>
 </section>
- -->
+</body>
+</html>

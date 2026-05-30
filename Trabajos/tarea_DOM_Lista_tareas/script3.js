@@ -7,7 +7,7 @@ const tareaInput = document.querySelector('#tarea')
 // document representa todo el documento HTML
 // querySelector() selecciona un elemento HTML
 // '#tarea' busca el elemento con id="tarea"
-
+contenedor-post
 
 
 const botonPost = document.querySelector('#btn-post')
@@ -41,8 +41,10 @@ function crearPublicacion(tarea){
     const nombreTarea = document.createElement('h4')
     // Crea un título <h4> para mostrar la tarea
 
+    //añadimos la constante a una class
+    nombreTarea.classList.add('tituloTarea')
 
-// Entre el div y el h4 agregamos el nombre de la tarea
+    // Entre el div y el h4 agregamos el nombre de la tarea
 
     nombreTarea.textContent = tarea;
     // textContent cambia el texto interno del elemento
@@ -52,18 +54,15 @@ function crearPublicacion(tarea){
     const mensajeTarea = document.createElement('p')
     // Crea un párrafo <p> para el mensaje
 
-
-
-// appendChild() agrega un elemento hijo dentro de otro elemento
-
-
     
 
+   
      // =========================
     // BOTÓN BORRAR
     // =========================
 
-    const botonBorrar = document.createElement('button')
+    // Creando botón para borrar post
+  const botonBorrar = document.createElement('button')
     // Crea un botón HTML
 
     botonBorrar.textContent = 'Borrar'
@@ -80,8 +79,10 @@ function crearPublicacion(tarea){
 
     })
 
+  
     //aqui deben ir los POST, luego de crear la const, y los botones
     
+// appendChild() agrega un elemento hijo dentro de otro elemento
     postTarea.appendChild(nombreTarea)
     // Agrega el nombre dentro del div
 
@@ -133,6 +134,24 @@ botonPost.addEventListener('click', function(){
     tareaInput.value = ''
     // Vacía el input del nombre
 
+  const botonBorrar = document.createElement('button')
+    // Crea un botón HTML
 
+    botonBorrar.textContent = 'Borrar'
+    // Texto visible del botón
+
+    botonBorrar.classList.add('btn-borrar')
+    // Clase CSS opcional
+
+    // Evento para borrar la tarea
+    botonBorrar.addEventListener('click', function(){
+
+        postTarea.remove()
+        // remove() elimina el elemento HTML
+
+    })
 })
+
+
+
 // Fin del evento click
