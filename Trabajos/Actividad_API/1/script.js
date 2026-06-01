@@ -54,18 +54,18 @@ boton.addEventListener('click', () => {
         // Convertir respuesta a JSON
         .then(respuesta => respuesta.json())
 
-        // Obtener datos
+        // Obtener datos aleatorios
         .then(datos => {
 
-            // Recorrer personajes
-            datos.results.forEach(personaje => {
+            const indiceAleatorio = Math.floor(
+            Math.random() * datos.results.length)
 
-                // Mostrar personaje
-                mostrarDatos(personaje)
+            const personaje = datos.results[indiceAleatorio]
 
-            })
+            mostrarDatos(personaje)
 
-        })
+    })
+
 
         // Mostrar errores
         .catch(error => console.log(error))
