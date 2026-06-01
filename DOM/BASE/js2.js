@@ -1,13 +1,14 @@
+
+
 // Para incluir estos algoritmos, necesitamos conectar
 // este archivo JS en el index con la etiqueta <script>
 
-
+// 1er paso de acción, donde al añadir un texto al input, se transforma en la const tareaInput
 const tareaInput = document.querySelector('#tarea')
 // const crea una variable constante
 // document representa todo el documento HTML
 // querySelector() selecciona un elemento HTML
 // '#tarea' busca el elemento con id="tarea"
-contenedor-post
 
 
 const botonPost = document.querySelector('#btn-post')
@@ -17,6 +18,7 @@ const contenedorPublicaciones = document.querySelector('#contenedor-post')
 // Selecciona el contenedor donde aparecerán las publicaciones
 
 
+//4to paso de acción,
 function crearPublicacion(tarea){
 // function crea una función reutilizable
 // crearPublicacion es el nombre de la función
@@ -27,13 +29,11 @@ function crearPublicacion(tarea){
 // Estamos creando un div para guardar la publicación
 
     const postTarea = document.createElement('div')
-    // createElement() crea un nuevo elemento HTML
-    // 'div' indica que se creará un <div>
+    // createElement() crea un nuevo elemento HTML 'div' indica que se creará un <div>
 
     postTarea.classList.add('posteo')
     // classList permite manejar clases CSS
-    // add() agrega una clase al elemento
-    // 'posteo' será la clase CSS aplicada
+    // add() agrega una clase al elemento'posteo' será la clase CSS aplicada
 
 
 
@@ -47,8 +47,25 @@ function crearPublicacion(tarea){
     // Entre el div y el h4 agregamos el nombre de la tarea
 
     nombreTarea.textContent = tarea;
-    // textContent cambia el texto interno del elemento
+    // textContent cambia el texto interno del párametro (tarea) por el de nombreTarea
     // nombre es el valor recibido por la función
+    /* 
+    INPUT
+ ↓
+"Comprar pan"
+ ↓
+tareaInput.value
+ ↓
+valorInputNombre
+ ↓
+crearPublicacion(valorInputNombre)
+ ↓
+tarea
+ ↓
+nombreTarea.textContent
+ ↓
+<h4>Comprar pan</h4>
+    */
 
 
     const mensajeTarea = document.createElement('p')
@@ -105,12 +122,14 @@ botonPost.addEventListener('click', function(){
 
 
 // Guardamos el contenido escrito por el usuario
+// 2do paso de acción, el valor de la const tareaInput lo guardamos en la const valorInputNombre
 
     const valorInputNombre = tareaInput.value;
     // value obtiene el texto escrito en el input
 
 
-// Verifica si los campos están vacíos
+// 3er paso de acción - Verifica si los campos están vacíos, sino, ejecuta la función
+//crearPublicacion(y aquí va nuestra variable del input->valorInputNombre)
 
     if(valorInputNombre === ''){
     // if evalúa una condición

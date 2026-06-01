@@ -1,8 +1,241 @@
-.boton{
+/* ==========================================================
+   REGLA RÁPIDA SOBRE ETIQUETAS HTML
 
-color:green}
+   Si la etiqueta contiene contenido:
+   <h1>Título</h1>
+
+   Necesita apertura y cierre.
+
+   Si solo declara información o inserta un elemento:
+   <meta charset="UTF-8">
+   <input type="text">
+   <img src="foto.jpg">
+
+   Generalmente no necesita cierre.
+========================================================== */
+
+
+/* ==========================================================
+   ESTILOS GENERALES DE LA PÁGINA
+========================================================== */
 
 body{
 
-background-color: rgb(9, 158, 109);}
+    background-color: rgb(9,158,109);
+    /* Color de fondo principal de toda la página */
 
+    min-height: 100vh;
+    /* Hace que el body ocupe toda la altura visible
+       de la ventana del navegador */
+
+    display:flex;
+    /* Activa Flexbox para organizar elementos */
+
+    justify-content:center;
+    /* Centra los elementos horizontalmente */
+
+    align-items:center;
+    /* Centra los elementos verticalmente */
+
+    text-align:center;
+    /* Centra el texto de forma predeterminada */
+
+}
+
+
+/* ==========================================================
+   TÍTULO PRINCIPAL
+========================================================== */
+
+h1{
+
+    color: rgb(90,86,63);
+    /* Color del título principal */
+
+}
+
+
+/* ==========================================================
+   FORMULARIO
+========================================================== */
+
+form{
+
+    background-color: rgb(209,200,186);
+    /* Color de fondo del formulario */
+
+    width:500px;
+    /* Ancho fijo del formulario */
+
+    padding:20px;
+    /* Espacio interno entre el contenido y los bordes */
+
+    border-radius:10px;
+    /* Bordes redondeados */
+
+    box-shadow:0 2px 10px rgba(0,0,0,0.2);
+    /* Sombra para dar efecto de profundidad */
+
+}
+
+
+/* ==========================================================
+   INPUT DE TAREAS
+========================================================== */
+
+input{
+
+    width:70%;
+    /* El input ocupa el 70% del ancho disponible */
+
+    padding:10px;
+    /* Espacio interno para escribir más cómodamente */
+
+    border:1px solid gray;
+    /* Borde simple de color gris */
+
+    border-radius:5px;
+    /* Esquinas suavizadas */
+
+}
+
+
+/* ==========================================================
+   BOTONES GENERALES
+========================================================== */
+
+button{
+
+    width:100px;
+    /* Ancho fijo para todos los botones */
+
+    padding:10px;
+    /* Espacio interno */
+
+    background-color:rgb(240,190,27);
+    /* Color de fondo amarillo */
+
+    color:black;
+    /* Color del texto */
+
+    border:none;
+    /* Elimina el borde predeterminado */
+
+    border-radius:5px;
+    /* Bordes redondeados */
+
+    cursor:pointer;
+    /* Cambia el cursor a una mano al pasar encima */
+
+}
+
+
+/* ==========================================================
+   CONTENEDOR DE PUBLICACIONES
+========================================================== */
+
+#contenedor_post{
+
+    margin-top:20px;
+    /* Separa las publicaciones del formulario */
+
+}
+
+
+/* ==========================================================
+   TARJETA DE CADA TAREA
+========================================================== */
+
+.classdivposteo{
+
+    width:300px;
+    /* Ancho de la tarjeta */
+
+    padding:15px;
+    /* Espacio interno entre borde y contenido */
+
+    margin:15px auto;
+    /* Separa las tareas entre sí y las centra */
+
+    background-color:rgb(219,217,55);
+    /* Fondo amarillo claro */
+
+    border-radius:10px;
+    /* Bordes redondeados */
+
+    box-shadow:0 2px 5px rgba(0,0,0,0.2);
+    /* Sombra suave para efecto de tarjeta */
+
+}
+
+
+/* ==========================================================
+   TÍTULO DE LA TAREA
+========================================================== */
+
+.classtitulopedido{
+
+    color:rgb(36,35,35);
+    /* Color oscuro para facilitar la lectura */
+
+    font-size:20px;
+    /* Tamaño del texto */
+
+    font-weight:bold;
+    /* Texto en negrita */
+
+    margin-bottom:10px;
+    /* Espacio debajo del título */
+
+}
+
+
+/* ==========================================================
+   BOTÓN BORRAR
+========================================================== */
+
+.classborrar{
+
+    background-color:rgb(235,59,59);
+    /* Color rojo asociado a eliminar */
+
+    color:white;
+    /* Texto blanco para mayor contraste */
+
+    margin-top:10px;
+    /* Separa el botón del título */
+
+}
+
+
+/* ==========================================================
+   EFECTO AL PASAR EL MOUSE SOBRE BOTONES
+========================================================== */
+
+button:hover{
+
+    opacity:0.85;
+    /* Reduce levemente la opacidad para indicar interacción */
+
+}
+
+
+/* ==========================================================
+   GUÍA RÁPIDA DE PROPIEDADES CSS UTILIZADAS
+
+   background-color → color de fondo
+   color            → color del texto
+   width            → ancho del elemento
+   padding          → espacio interno
+   margin           → espacio externo
+   border           → borde del elemento
+   border-radius    → redondea esquinas
+   display:flex     → activa Flexbox
+   justify-content  → alineación horizontal
+   align-items      → alineación vertical
+   box-shadow       → agrega sombras
+   cursor:pointer   → cursor tipo mano
+   opacity          → transparencia
+   font-size        → tamaño del texto
+   font-weight      → grosor del texto
+========================================================== */

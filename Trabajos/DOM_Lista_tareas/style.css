@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(23, 158, 211);
+    background-color: rgb(36, 172, 127);
     display:flex;
     justify-content: center;
     align-items: center;
@@ -32,14 +32,14 @@ button:hover{
 }
  
 .posteo {
-    background-color: beige;
+    background-color: rgb(236, 234, 117);
     border-radius: 5px;
     padding: 5px;
     margin: 10px 0px;
 }
 
 .btn-borrar{
-    background-color: rgb(224, 41, 17);
+    background-color: rgb(235, 97, 79);
 
 }
 
@@ -55,5 +55,19 @@ color:rgb(8, 88, 236)}
 
 .tituloTarea{
 
-    color:blue
+    color:rgb(53, 53, 58)
 }
+
+
+/*  Regla rápida
+
+Si la etiqueta contiene algo dentro → necesita cierre.
+
+<h1>Título</h1>
+
+Si solo declara información o inserta un elemento único → normalmente no tiene cierre.
+
+<meta charset="UTF-8">
+<input type="text">
+<img src="foto.jpg">
+*/
