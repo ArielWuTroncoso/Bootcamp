@@ -1,0 +1,71 @@
+<!-- Página Worklist: permite agregar tareas dinámicamente con JavaScript -->
+
+
+
+
+<!DOCTYPE html>
+
+<html lang="en"> <!-- Idioma español -->
+
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Permite utilizar caracteres especiales -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Adapta la página a dispositivos móviles -->
+
+    <title>Work's list</title>
+
+    <link rel="stylesheet" href="style.css">
+    <!-- Conexión con la hoja de estilos CSS -->
+
+</head>
+
+<body>
+
+    <!-- Contenido principal de la aplicación -->
+    <main class="container">
+
+        <h1>Mi Lista de Tareas</h1>
+        
+        <form action="" method="post">
+        <!-- Formulario para ingresar nuevas tareas -->
+
+            <label for="tarea"></label>
+            <!-- Label asociado al input mediante el id -->
+
+            <input
+                type="text"
+                id="tarea"
+                placeholder="Escribe una nueva Tarea">
+            <!-- Aquú se añade la tarea-->
+
+
+            <button id="btn-post">
+                Agregar Tarea
+            </button>
+            <!-- Boton para crear una nueva tarea -->
+
+        </form>
+
+
+
+        <div id="contenedor-post">
+
+            <!--
+            aquí se verán las tareas generadas 
+            por JS (DOM)
+            -->
+
+        </div>
+
+    </main>
+
+
+    <!-- Enlace del archivo JavaScript, SRC = source -->
+    <script src="script3.js"></script>
+
+</body>
+
+</html>

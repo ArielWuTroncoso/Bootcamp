@@ -1,0 +1,73 @@
+body{
+    background-color: rgb(36, 172, 127);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+ 
+form {
+    border-radius: 10px;
+    background-color: rgb(240, 235, 235);
+    box-shadow: 0px 0px 5px black;
+    padding: 20px;
+}
+ 
+input, textarea {
+    width: 100%;
+    margin-bottom: 20px;
+}
+ 
+button {
+    width: 30%;
+    background-color: rgb(68, 169, 252);
+    color: white;
+    padding: 5px;
+    border:none;
+    border-radius: 5px;
+}
+ 
+button:hover{
+    background-color: rgb(8, 88, 236);
+}
+ 
+.posteo {
+    background-color: rgb(236, 234, 117);
+    border-radius: 5px;
+    padding: 5px;
+    margin: 10px 0px;
+}
+
+.btn-borrar{
+    background-color: rgb(235, 97, 79);
+
+}
+
+.container{
+ color: rgb(254, 255, 253)
+
+}
+
+p{
+
+color:rgb(8, 88, 236)}
+
+
+.tituloTarea{
+
+    color:rgb(53, 53, 58)
+}
+
+
+/*  Regla rápida
+
+Si la etiqueta contiene algo dentro → necesita cierre.
+
+<h1>Título</h1>
+
+Si solo declara información o inserta un elemento único → normalmente no tiene cierre.
+
+<meta charset="UTF-8">
+<input type="text">
+<img src="foto.jpg">
+*/

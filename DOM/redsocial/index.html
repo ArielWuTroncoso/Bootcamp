@@ -1,0 +1,94 @@
+<!-- Mini red social, donde puedo escribir mi nombre y una publicación -->
+
+<!DOCTYPE html>
+<!-- Indica que el documento utiliza HTML5 -->
+
+<html lang="en">
+<!-- Inicio del documento HTML -->
+<!-- lang="en" define el idioma principal -->
+
+<head>
+<!-- head contiene configuraciones internas de la página -->
+
+    <meta charset="UTF-8">
+    <!-- meta entrega información al navegador -->
+    <!-- charset="UTF-8" permite usar tildes, ñ y caracteres especiales -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- viewport adapta la página a celulares -->
+    <!-- width=device-width usa el ancho real del dispositivo -->
+    <!-- initial-scale=1.0 define el zoom inicial -->
+
+    <title>Red social</title>
+    <!-- title define el nombre que aparece en la pestaña -->
+
+    <link rel="stylesheet" href="style.css">
+    <!-- link conecta archivos externos -->
+    <!-- rel="stylesheet" indica que es CSS -->
+    <!-- href contiene la ruta del archivo -->
+    <
+    
+</head>
+
+<body>
+<!-- body contiene el contenido visible -->
+
+    <main class="container">
+    <!-- main representa el contenido principal -->
+    <!-- class sirve para aplicar estilos CSS -->
+
+        <h1>Mini red social</h1>
+        <!-- h1 es el título principal -->
+
+        <form action="" method="post">
+        <!-- form crea un formulario -->
+        <!-- action="" indica dónde enviar los datos -->
+        <!-- method="post" envía información -->
+
+            <label for="name"></label>
+            <!-- label describe un input -->
+            <!-- for conecta el label con el id -->
+            <!-- ¿Qué hace for="tarea"?
+                    Le dice al navegador: "Este label pertenece al input con id='tarea'" -->
+                                             
+
+            <input type="text" id="name" placeholder="Escribe tu nombre">
+            <!-- input crea un campo de texto -->
+            <!-- type="text" permite escribir texto -->
+            <!-- id identifica el elemento -->
+            <!-- placeholder muestra texto guía -->
+
+            <label for="mensaje"></label>
+            <!-- label asociado al textarea -->
+
+            <textarea name="mensaje" id="mensaje"  placeholder="Escribe una publicación">
+            </textarea>
+            <!-- textarea permite escribir texto largo -->
+            <!-- name identifica el dato enviado -->
+            <!-- id identifica el elemento -->
+            <!-- placeholder muestra ayuda visual -->
+
+        {}    <button id="btn-post">Publicar</button>
+            <!-- button crea un botón -->
+            <!-- id permite usarlo desde JavaScript -->
+
+        </form>
+
+        <div id="contenedor-post">
+        <!-- div sirve para agrupar contenido -->
+        <!-- id identifica el contenedor -->
+
+            <!-- Aquí aparecerán las publicaciones -->
+            <!-- JavaScript agregará dinámicamente nuevos posts -->
+
+        </div>
+
+    </main>
+
+    <script src="script2.js"></script>
+    <!-- script conecta JavaScript -->
+    <!-- src indica la ruta del archivo JS -->
+
+</body>
+
+</html>
