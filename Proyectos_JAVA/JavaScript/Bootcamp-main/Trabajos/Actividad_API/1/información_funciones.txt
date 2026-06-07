@@ -1,0 +1,121 @@
+
+
+fetch()
+
+Sirve para consumir APIs.
+
+fetch('URL')
+.then()
+
+Espera la respuesta correcta.
+
+.then(response => response.json())
+.json()
+
+Convierte los datos a formato JavaScript.
+
+.catch()
+
+Captura errores.
+
+.catch(error => console.log(error))
+addEventListener()
+
+Escucha eventos como clicks.
+
+boton.addEventListener('click', ...)
+querySelector()
+
+Selecciona elementos HTML.
+
+document.querySelector('#id')
+
+
+
+
+########### USO DE RESPONSE #################
+
+Paso 1 — fetch(url)
+fetch('https://api.com')
+
+Hace una petición HTTP a una API.
+
+Piensa que:
+
+fetch() = “ir a buscar información”
+Paso 2 — La API responde
+
+La API devuelve una respuesta HTTP.
+
+Esa respuesta llega aquí:
+
+.then(response => ...)
+¿Qué es response?
+
+response es la función que recibe el paquete completo que devuelve el servidor.
+se transforma en función por medio de => 
+también podría ser .then function response (response.dato)
+
+fetch(url)
+
+.then(response => response.json())
+
+.then(datos => console.log(datos))
+
+--------------------------------------------
+fetch(url)
+
+.then(function(response){
+
+    return response.json()
+
+})
+
+Contiene:
+
+estado HTTP
+headers
+datos
+tipo contenido
+etc.
+
+Ejemplo:
+
+console.log(response)
+
+mostraría algo parecido a:
+
+Response {
+  status: 200,
+  ok: true,
+  body: ReadableStream,
+  ...
+}
+
+--------------Problema importante--------------
+
+La información NO viene lista para usar.
+
+Viene “cruda”.
+
+Por eso necesitas:
+
+response.json()
+¿Qué hace .json()?
+
+Convierte la respuesta en un objeto JavaScript.
+
+-----------------Importante-----------------
+
+.json() también devuelve una PROMESA.
+
+Por eso necesitas OTRO .then():
+
+.then(response => response.json())
+
+.then(datos => {
+
+})
+
+#######################################################################
+

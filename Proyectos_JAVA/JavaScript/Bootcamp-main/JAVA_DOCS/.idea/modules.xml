@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Bucles/Bucles.iml" filepath="$PROJECT_DIR$/Bucles/Bucles.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Control/Control.iml" filepath="$PROJECT_DIR$/Control/Control.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EjemploScanner/EjemploScanner.iml" filepath="$PROJECT_DIR$/EjemploScanner/EjemploScanner.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Java1.iml" filepath="$PROJECT_DIR$/Java1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Numeros/Numeros.iml" filepath="$PROJECT_DIR$/Numeros/Numeros.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Tarea1JAVA/Tarea1JAVA.iml" filepath="$PROJECT_DIR$/Tarea1JAVA/Tarea1JAVA.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cadenaTexto/cadenaTexto.iml" filepath="$PROJECT_DIR$/cadenaTexto/cadenaTexto.iml" />
+      <module fileurl="file://$PROJECT_DIR$/materia_letrasyNumeros/materia_letrasyNumeros.iml" filepath="$PROJECT_DIR$/materia_letrasyNumeros/materia_letrasyNumeros.iml" />
+    </modules>
+  </component>
+</project>
