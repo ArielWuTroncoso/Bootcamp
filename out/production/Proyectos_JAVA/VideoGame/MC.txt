@@ -1,0 +1,123 @@
+PROGRAMACIÓN ORIENTADA A OBJETOS (POO)
+│
+├── CLASE
+│   │
+│   └── VideoGame
+│       │
+│       ├── atributos
+│       │   ├── nombre
+│       │   ├── genero
+│       │   └── precio
+│       │
+│       ├── constructor
+│       │   └── VideoGame(...)
+│       │
+│       └── métodos
+│           ├── getNombre()
+│           ├── getGenero()
+│           ├── getPrecio()
+│           ├── setPrecio()
+│           └── showInfo()
+│
+├── OBJETOS
+│   │
+│   └── Se crean en main mediante "new"
+│       │
+│       ├── Juego1
+│       ├── Juego2
+│       ├── Juego3
+│       ├── Consola
+│       └── requisitos
+│
+├── ENCAPSULACIÓN
+│   │
+│   ├── private
+│   │   ├── nombre
+│   │   ├── genero
+│   │   └── precio
+│   │
+│   ├── getters
+│   │   ├── getNombre()
+│   │   ├── getGenero()
+│   │   └── getPrecio()
+│   │
+│   └── setter
+│       └── setPrecio()
+│            │
+│            └── valida que precio > 0
+│
+├── HERENCIA
+│   │
+│   └── VideoGame (PADRE)
+│       │
+│       ├── PCGame (HIJA)
+│       │   └── requisitosMinimos
+│       │
+│       └── ConsoleGame (HIJA)
+│           └── consolaCompatible
+│
+├── REUTILIZACIÓN
+│   │
+│   └── super.showInfo()
+│       │
+│       ├── reutiliza nombre
+│       ├── reutiliza genero
+│       └── reutiliza precio
+│
+├── POLIMORFISMO
+│   │
+│   ├── mismo método:
+│   │      showInfo()
+│   │
+│   ├── VideoGame
+│   │      └── muestra datos básicos
+│   │
+│   ├── PCGame
+│   │      └── muestra datos básicos
+│   │          + requisitosMinimos
+│   │
+│   └── ConsoleGame
+│          └── muestra datos básicos
+│              + consolaCompatible
+│
+├── OVERRIDE
+│   │
+│   ├── PCGame
+│   │   └── @Override showInfo()
+│   │
+│   └── ConsoleGame
+│       └── @Override showInfo()
+│
+├── MODIFICADORES DE ACCESO
+│   │
+│   ├── private
+│   │   └── solo dentro de la clase
+│   │
+│   ├── protected
+│   │   └── clase + clases hijas
+│   │
+│   ├── public
+│   │   └── acceso desde cualquier clase
+│   │
+│   └── default
+│       └── solo dentro del package
+│
+└── MAIN
+    │
+    ├── instancia objetos
+    │    └── new VideoGame(...)
+    │
+    ├── instancia hijas
+    │    ├── new PCGame(...)
+    │    └── new ConsoleGame(...)
+    │
+    ├── crea ArrayList<VideoGame>
+    │
+    ├── agrega objetos
+    │
+    └── forEach()
+         │
+         └── juego.showInfo()
+                 │
+                 └── Java decide qué versión ejecutar
+                     (POLIMORFISMO)

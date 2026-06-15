@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Bootcamp.iml" filepath="$PROJECT_DIR$/.idea/Bootcamp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Proyectos_JAVA/JavaScript/Bootcamp-main/JAVA_DOCS/Bucles/Bucles.iml" filepath="$PROJECT_DIR$/Proyectos_JAVA/JavaScript/Bootcamp-main/JAVA_DOCS/Bucles/Bucles.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Proyectos_JAVA/Cine/Cine.iml" filepath="$PROJECT_DIR$/Proyectos_JAVA/Cine/Cine.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Proyectos_JAVA/CineApp/CineApp.iml" filepath="$PROJECT_DIR$/Proyectos_JAVA/CineApp/CineApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Proyectos_JAVA/JavaScript/Bootcamp-main/JAVA_DOCS/Control/Control.iml" filepath="$PROJECT_DIR$/Proyectos_JAVA/JavaScript/Bootcamp-main/JAVA_DOCS/Control/Control.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Proyectos_JAVA/JavaScript/Bootcamp-main/JAVA_DOCS/EjemploScanner/EjemploScanner.iml" filepath="$PROJECT_DIR$/Proyectos_JAVA/JavaScript/Bootcamp-main/JAVA_DOCS/EjemploScanner/EjemploScanner.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Proyectos_JAVA/JavaScript/Bootcamp-main/JAVA_DOCS/JAVA_DOCS.iml" filepath="$PROJECT_DIR$/Proyectos_JAVA/JavaScript/Bootcamp-main/JAVA_DOCS/JAVA_DOCS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Proyectos_JAVA/JavaScript/Bootcamp-main/JAVA_DOCS/Numeros/Numeros.iml" filepath="$PROJECT_DIR$/Proyectos_JAVA/JavaScript/Bootcamp-main/JAVA_DOCS/Numeros/Numeros.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Proyectos_JAVA/Proyectos_JAVA.iml" filepath="$PROJECT_DIR$/Proyectos_JAVA/Proyectos_JAVA.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Proyectos_JAVA/RefugioMascotas/RefugioMascotas.iml" filepath="$PROJECT_DIR$/Proyectos_JAVA/RefugioMascotas/RefugioMascotas.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Proyectos_JAVA/JavaScript/Bootcamp-main/JAVA_DOCS/Tarea1JAVA/Tarea1JAVA.iml" filepath="$PROJECT_DIR$/Proyectos_JAVA/JavaScript/Bootcamp-main/JAVA_DOCS/Tarea1JAVA/Tarea1JAVA.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Proyectos_JAVA/JavaScript/Bootcamp-main/JAVA_DOCS/cadenaTexto/cadenaTexto.iml" filepath="$PROJECT_DIR$/Proyectos_JAVA/JavaScript/Bootcamp-main/JAVA_DOCS/cadenaTexto/cadenaTexto.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Proyectos_JAVA/JavaScript/Bootcamp-main/JAVA_DOCS/materia_letrasyNumeros/materia_letrasyNumeros.iml" filepath="$PROJECT_DIR$/Proyectos_JAVA/JavaScript/Bootcamp-main/JAVA_DOCS/materia_letrasyNumeros/materia_letrasyNumeros.iml" />
+    </modules>
+  </component>
+</project>

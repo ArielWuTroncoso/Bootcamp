@@ -1,0 +1,265 @@
+
+# Ejercicio: Sistema de Gestión de Videojuegos
+
+## Parte 1 - Crear una clase simple
+
+### Objetivo
+
+Crear una clase, atributos y objetos.
+
+### Instrucciones
+
+Una tienda de videojuegos necesita registrar los juegos que tiene disponibles.
+
+Crea una clase llamada `VideoGame`.
+
+La clase debe contener:
+
+- nombre
+- genero
+- precio
+
+Desde el método `main`:
+
+1. Crea dos videojuegos diferentes.
+2. Asigna valores a sus atributos.
+3. Muestra toda la información por consola.
+
+### Salida esperada
+
+```
+Nombre: Minecraft
+Genero: Sandbox
+Precio: 20000
+
+Nombre: FIFA
+Genero: Deportes
+Precio: 35000
+```
+
+### Conceptos trabajados
+
+- Clase
+- Objeto
+- Atributos
+
+---
+
+# Ejercicio 2: Agregar constructores y métodos
+
+### Objetivo
+
+Inicializar objetos correctamente y agregar comportamientos.
+
+### Instrucciones
+
+Modifica la clase `VideoGame`.
+
+Ahora:
+
+1. Los datos deben recibirse mediante un constructor.
+2. Agrega un método llamado `showInfo()`.
+
+Desde `main`:
+
+1. Crea tres videojuegos usando el constructor.
+2. Utiliza el método `showInfo()` para mostrar los datos.
+
+### Ejemplo
+
+```
+VideoGamegame1=newVideoGame("Minecraft","Sandbox",20000);
+```
+
+### Conceptos trabajados
+
+- Constructor
+- this
+- Métodos
+
+---
+
+# Ejercicio 3: Aplicar encapsulación
+
+### Objetivo
+
+Proteger los datos internos del objeto.
+
+### Instrucciones
+
+Modifica nuevamente la clase `VideoGame`.
+
+Ahora:
+
+1. Todos los atributos deben ser privados.
+2. Crea getters para todos los atributos.
+3. Crea setters únicamente para el precio.
+
+Reglas:
+
+- El precio nunca puede ser menor o igual a 0.
+- Si se intenta asignar un valor inválido, mostrar un mensaje de error.
+
+Desde `main`:
+
+1. Intenta asignar un precio válido.
+2. Intenta asignar un precio inválido.
+3. Muestra el precio final.
+
+### Conceptos trabajados
+
+- Encapsulación
+- private
+- getters
+- setters
+- validaciones
+
+---
+
+# Ejercicio 4: Crear una jerarquía de productos
+
+### Objetivo
+
+Introducir herencia.
+
+### Instrucciones
+
+La tienda ahora vende distintos tipos de videojuegos.
+
+Crea una clase padre llamada:
+
+```
+VideoGame
+```
+
+Y dos clases hijas:
+
+```
+PCGame
+ConsoleGame
+```
+
+### PCGame
+
+Agregar:
+
+- requisitosMinimos
+
+### ConsoleGame
+
+Agregar:
+
+- consolaCompatible
+
+Implementa un método llamado:
+
+```
+showInfo()
+```
+
+Cada clase debe mostrar su propia información.
+
+Desde `main`:
+
+1. Crear al menos un juego de PC.
+2. Crear al menos un juego de consola.
+3. Mostrar la información de ambos.
+
+### Conceptos trabajados
+
+- Herencia
+- extends
+- reutilización
+
+---
+
+# Ejercicio 5: Aplicar polimorfismo
+
+### Objetivo
+
+Utilizar referencias de tipo padre.
+
+### Instrucciones
+
+Utilizando las clases creadas anteriormente:
+
+- VideoGame
+- PCGame
+- ConsoleGame
+
+Crea un:
+
+```
+ArrayList<VideoGame>
+```
+
+Agrega distintos videojuegos.
+
+Recorre la lista y ejecuta:
+
+```
+showInfo();
+```
+
+El programa debe mostrar automáticamente la información correcta según el tipo de videojuego.
+
+### Conceptos trabajados
+
+- Polimorfismo
+- Sobrescritura
+- ArrayList
+- for-each
+
+---
+
+# Ejercicio Integrador 6: Sistema de descuentos
+
+### Objetivo
+
+Combinar encapsulación, herencia y polimorfismo.
+
+### Instrucciones
+
+Agrega a la jerarquía un método:
+
+```
+calculateFinalPrice()
+```
+
+### Reglas
+
+### VideoGame
+
+No aplica descuento.
+
+### PCGame
+
+Aplica un descuento del 10%.
+
+### ConsoleGame
+
+Aplica un descuento del 15%.
+
+Sobrescribe el método en cada clase.
+
+Desde `main`:
+
+1. Crear varios videojuegos.
+2. Guardarlos en un `ArrayList<VideoGame>`.
+3. Mostrar:
+    - nombre
+    - precio original
+    - precio final
+
+### Ejemplo de salida
+
+```
+Minecraft
+Precio Original: 20000
+Precio Final: 18000
+
+Spider-Man 2
+Precio Original: 50000
+Precio Final: 42500
+```
+

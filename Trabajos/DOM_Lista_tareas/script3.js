@@ -1,4 +1,4 @@
-//DOM en secuencia para comprender la lógica
+//DOM en secuencia 
 
 
 
