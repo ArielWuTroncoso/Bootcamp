@@ -1,3 +1,31 @@
 spring:
   application:
     name: usuarioapi
+
+    config:
+      import: optional:file:.env[.properties]
+
+      datasource:
+        url: ${DB_URL}
+
+        username: ${DB_USER}
+        password: ${DB_PASSWORD}
+        #dependencia q conecta con la db postgres
+        driver-class-name: org.postgresql.Driver
+
+        jpa:
+          #hibernate permite transfor los objetos java en sql
+          hibernate:
+            #actualizar las tablas
+            ddl-auto: update
+            #para mostrar consultar y ver que esta haciendo
+          show-sql: true
+
+        sql:
+          init:
+            mode: always
+            #ejecuta automac. un scrip sql al hacer run la app
+
+
+
+
