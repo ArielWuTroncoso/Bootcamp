@@ -1,0 +1,31 @@
+meta {
+  name: Actualizar Producto
+  type: http
+  seq: 5
+}
+
+put {
+  url: http://localhost:8080/productos/1
+  body: json
+  auth: inherit
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+   
+    {
+      "nombre": "Notebook Lenovo",
+      "descripcion": "Notebook actualizado para estudio y trabajo",
+      "precio": 649990,
+      "stock": 8,
+      "categoria": "Computacion"
+    }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
